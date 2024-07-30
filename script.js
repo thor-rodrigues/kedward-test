@@ -48,7 +48,7 @@ async function askQuestion(question = null) {
           redirect: "follow"
         };
 
-        const response = await fetch("http://127.0.0.1:7861/api/v1/run/cosmos-ked?stream=false", requestOptions);
+        const response = await fetch("http://127.0.0.1:7860/api/v1/run/1f92385e-a0ba-429a-8edc-dc83ff546834?stream=false", requestOptions);
         const result = await response.json();
 
         answer = result.outputs[0].outputs[0].results.message.data.text;
